@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+ 
+{% block content %} 
+
+<div class="text-center">
+
+  <h2>{{post.Titulo}}</h2>
+  <h3 class="my-2 h5 text-muted"></h3>
+
+  <div class="my-4">
+    <p>{{post.Descripcion|safe}}</p>
+  </div>
+  <img src="{{post.Imagen.url}}" alt="{{post.Titulo}}" class="img-fluid "/>
+  
+
+
+ 
+</div>
+
+{% endblock %}
